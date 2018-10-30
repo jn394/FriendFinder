@@ -161,30 +161,25 @@
             // scores: [parseInt($("#q1 :selected").val()), parseInt($("#q2 :selected").val()), parseInt($("#q3 :selected").val()),
             // parseInt($("#q4 :selected").val()), parseInt($("#q5 :selected").val()), parseInt($("#q6 :selected").val()), parseInt($("#q7 :selected").val()),
             // parseInt($("#q8 :selected").val()), parseInt($("#q9 :selected").val()), parseInt($("#q10 :selected").val())]
-            scores: [1,1,1,1,1,1,1,1,1,1]
+            scores: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
         };
 
         console.log(newFriend);
         console.log(newFriend.scores);
 
-        // This line is the magic. It"s very similar to the standard ajax function we used.
-        // Essentially we give it a URL, we give it the object we want to send, then we have a "callback".
-        // The callback is the response of the server. In our case, we set up code in api-routes that "returns" true or false
-        // depending on if a tables is available or not.
-
-        $.post("/api/friends", newFriend,
+        $.post("/api/friends", {scores: newFriend.scores},
             function (data) {
 
-console.log(data);
-for (var i = 0; i < data.length; i++) {
-    console.log(data[i].scores);
-    for (var j = 0; j < data[i].scores.length; j++){
-        var x = [];
-        x.push(newFriend[j]-data[i].scores[j]);
-    }
-};
+                console.log(data);
+                // for (var i = 0; i < data.length; i++) {
+                //     console.log(data[i].scores);
+                //     for (var j = 0; j < data[i].scores.length; j++) {
+                //         var x = [];
+                //         x.push(newFriend[j] - data[i].scores[j]);
+                //     }
+                // };
 
-console.log(x);
+                // console.log(x);
                 // var a = [1, 4, 3, 2],
                 //     b = [0, 2, 1, 2],
                 //     x = [];
