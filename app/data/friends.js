@@ -1,7 +1,7 @@
 var friends = [
     {
         "name": "Ahmed",
-        "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        "photo": "https://pixel.nymag.com/imgs/daily/vulture/2017/08/09/9-riz-ahmed.w330.h330.jpg",
         "scores": [
             5,
             1,
@@ -12,6 +12,22 @@ var friends = [
             2,
             5,
             4,
+            1
+        ]
+    },
+    {
+        "name": "Patrick",
+        "photo": "https://vignette.wikia.nocookie.net/nickelodeon-movies/images/7/7e/Patrick_Star.png/revision/latest?cb=20180107193038",
+        "scores": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
             1
         ]
     }

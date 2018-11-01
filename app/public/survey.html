@@ -42,7 +42,7 @@
             </div>
             <h4>Question 2</h4>
             <div class="form-group">
-                <label for="q2">Your mind is always buzzing with unexplored ideas and plans.</label>
+                <label for="q2">Generally speaking, you rely more on your experience than your imagination.</label>
                 <select class="form-control" id="q2">
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
@@ -53,7 +53,7 @@
             </div>
             <h4>Question 3</h4>
             <div class="form-group">
-                <label for="q3">Your mind is always buzzing with unexplored ideas and plans.</label>
+                <label for="q3">You find it easy to stay relaxed and focused even when there is some pressure.</label>
                 <select class="form-control" id="q3">
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
@@ -64,7 +64,7 @@
             </div>
             <h4>Question 4</h4>
             <div class="form-group">
-                <label for="q4">Your mind is always buzzing with unexplored ideas and plans.</label>
+                <label for="q4">You rarely do something just out of sheer curiosity.</label>
                 <select class="form-control" id="q4">
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
@@ -75,7 +75,7 @@
             </div>
             <h4>Question 5</h4>
             <div class="form-group">
-                <label for="q5">Your mind is always buzzing with unexplored ideas and plans.</label>
+                <label for="q5">People can rarely upset you.</label>
                 <select class="form-control" id="q5">
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
@@ -86,7 +86,7 @@
             </div>
             <h4>Question 6</h4>
             <div class="form-group">
-                <label for="q6">Your mind is always buzzing with unexplored ideas and plans.</label>
+                <label for="q6">It is often difficult for you to relate to other people’s feelings.</label>
                 <select class="form-control" id="q6">
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
@@ -97,7 +97,7 @@
             </div>
             <h4>Question 7</h4>
             <div class="form-group">
-                <label for="q7">Your mind is always buzzing with unexplored ideas and plans.</label>
+                <label for="q7">In a discussion, truth should be more important than people’s sensitivities.</label>
                 <select class="form-control" id="q7">
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
@@ -108,7 +108,7 @@
             </div>
             <h4>Question 8</h4>
             <div class="form-group">
-                <label for="q8">Your mind is always buzzing with unexplored ideas and plans.</label>
+                <label for="q8">You rarely get carried away by fantasies and ideas.</label>
                 <select class="form-control" id="q8">
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
@@ -119,7 +119,7 @@
             </div>
             <h4>Question 9</h4>
             <div class="form-group">
-                <label for="q9">Your mind is always buzzing with unexplored ideas and plans.</label>
+                <label for="q9">You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</label>
                 <select class="form-control" id="q9">
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
@@ -130,7 +130,7 @@
             </div>
             <h4>Question 10</h4>
             <div class="form-group">
-                <label for="q10">Your mind is always buzzing with unexplored ideas and plans.</label>
+                <label for="q10">You feel more energetic after spending time with a group of people.</label>
                 <select class="form-control" id="q10">
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
@@ -139,7 +139,11 @@
                     <option value="5"> 5 (Strongly Agree)</option>
                 </select>
             </div>
-            <button type="submit" class="btn btn-primary submit"><i class="fas fa-check-circle mr-2"></i>Submit</button>
+
+            <button type="submit" class="btn btn-primary submit" data-toggle="modal" data-target="#exampleModal"><i
+                    class="fas fa-check-circle mr-2"></i>Submit
+            </button>
+
         </form>
 
         <div class="ftr">
@@ -147,7 +151,36 @@
         </div>
 
     </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Best Match</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h4 id=bestMatch class="d-flex justify-content-center"></h4>
+                    <div id=bestMatchImg class="d-flex justify-content-center"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
 
 <script type="text/javascript">
 
@@ -158,60 +191,70 @@
         var newFriend = {
             name: $("#name").val().trim(),
             photo: $("#photo").val().trim(),
-            // scores: [parseInt($("#q1 :selected").val()), parseInt($("#q2 :selected").val()), parseInt($("#q3 :selected").val()),
-            // parseInt($("#q4 :selected").val()), parseInt($("#q5 :selected").val()), parseInt($("#q6 :selected").val()), parseInt($("#q7 :selected").val()),
-            // parseInt($("#q8 :selected").val()), parseInt($("#q9 :selected").val()), parseInt($("#q10 :selected").val())]
-            scores: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+            scores: [$("#q1 :selected").val(), $("#q2 :selected").val(), $("#q3 :selected").val(),
+            $("#q4 :selected").val(), $("#q5 :selected").val(), $("#q6 :selected").val(), $("#q7 :selected").val(),
+            $("#q8 :selected").val(), $("#q9 :selected").val(), $("#q10 :selected").val()]
+
         };
 
         console.log(newFriend);
         console.log(newFriend.scores);
 
-        $.post("/api/friends", {scores: newFriend.scores},
+        $.post("/api/friends", newFriend,
             function (data) {
 
                 console.log(data);
-                // for (var i = 0; i < data.length; i++) {
-                //     console.log(data[i].scores);
-                //     for (var j = 0; j < data[i].scores.length; j++) {
-                //         var x = [];
-                //         x.push(newFriend[j] - data[i].scores[j]);
-                //     }
-                // };
 
-                // console.log(x);
-                // var a = [1, 4, 3, 2],
-                //     b = [0, 2, 1, 2],
-                //     x = [];
+                //Function for .reduce to work
+                function getSum(total, num) {
+                    return total + num;
+                };
 
-                // for (var i = 0; i <= b.length - 1; i++)
-                //     x.push(a[i] - b[i]);
+                //Initial values
+                var matchScore = 40;
+                var yourMatch = "No One";
+                var matchImg = "https://cdn.shopify.com/s/files/1/1061/1924/products/Very_sad_emoji_icon_png_large.png?v=1480481019";
 
-                // console.log(x);
+                //Function to run thru all the entries and find the best match for the user thats just submitted.
+                function findMatch() {
+                    
+                    for (var i = 0; i < data.length - 1; i++) {
+                        var scoreDif = newFriend.scores.map(function (item, index) {
+                            return Math.abs(item - data[i].scores[index]);
+                        })
+                        console.log(scoreDif);
 
-                // If a table is available... tell user they are booked.
-                if (data) {
-                    alert("Yay! You are officially Added!");
-                }
+                        var newMatchScore = scoreDif.reduce(getSum);
+                        console.log(newMatchScore);
 
-                // If a table is available... tell user they on the waiting list.
-                else {
-                    alert("Sorry it didnt work");
-                }
+                        if (newMatchScore < matchScore) {
+                            matchScore = newMatchScore;
+                            yourMatch = data[i].name;
+                            matchImg = data[i].photo;
+                        };
+                        console.log(matchScore);
+                        console.log(yourMatch);
+                    };
+                    $("#bestMatch").text(yourMatch);
+                    $("#bestMatchImg").empty();
+                    $("#bestMatchImg").append("<img src=" + "'" + matchImg + "'" + "class='rounded-circle mt-2 shadow-lg' height='200' width='200'>");
+                };
+
+                findMatch();
 
                 // Clear the form when submitting
                 $("#name").val("");
                 $("#photo").val("");
-                $("#q1").val("");
-                $("#q2").val("");
-                $("#q3").val("");
-                $("#q4").val("");
-                $("#q5").val("");
-                $("#q6").val("");
-                $("#q7").val("");
-                $("#q8").val("");
-                $("#q9").val("");
-                $("#q10").val("");
+                $("#q1").val(1);
+                $("#q2").val(1);
+                $("#q3").val(1);
+                $("#q4").val(1);
+                $("#q5").val(1);
+                $("#q6").val(1);
+                $("#q7").val(1);
+                $("#q8").val(1);
+                $("#q9").val(1);
+                $("#q10").val(1);
 
             });
     });
